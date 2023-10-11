@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/saasproject/static/css/main.774cdcb2.css",
-    "main.js": "/saasproject/static/js/main.c21eaf1f.js",
+    "main.css": "/saasproject/static/css/main.257e9ded.css",
+    "main.js": "/saasproject/static/js/main.866e7657.js",
     "static/js/787.c4b9642c.chunk.js": "/saasproject/static/js/787.c4b9642c.chunk.js",
     "static/media/Group 396.png": "/saasproject/static/media/Group 396.661be0b7af8f082eee53.png",
     "static/media/preview 1.png": "/saasproject/static/media/preview 1.0689be372c14529c767d.png",
     "index.html": "/saasproject/index.html",
-    "main.774cdcb2.css.map": "/saasproject/static/css/main.774cdcb2.css.map",
-    "main.c21eaf1f.js.map": "/saasproject/static/js/main.c21eaf1f.js.map",
+    "main.257e9ded.css.map": "/saasproject/static/css/main.257e9ded.css.map",
+    "main.866e7657.js.map": "/saasproject/static/js/main.866e7657.js.map",
     "787.c4b9642c.chunk.js.map": "/saasproject/static/js/787.c4b9642c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.774cdcb2.css",
-    "static/js/main.c21eaf1f.js"
+    "static/css/main.257e9ded.css",
+    "static/js/main.866e7657.js"
   ]
 }
