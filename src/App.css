@@ -237,6 +237,59 @@ div.features-card p {
   animation: bounce-in 2s linear 1;
 }
 
+.section-pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 200px 200px;
+}
+
+.section-pricing-text {
+  display: flex;
+  justify-content: center;
+}
+
+.button-change-plans {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-card{
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card h4{
+  font-size: 25px;
+  margin: 0;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.pricing-card h3{
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.pricing-card button{
+  background-color: rgba(0, 0, 255, 0.37);
+  border: none;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+}
+
+.pricing-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
 @keyframes bounce-in {
   0% {
       -webkit-transform: translateY(-300px) scale(0.3);
@@ -295,4 +348,58 @@ div.features-card p {
       -webkit-animation-timing-function: ease-out;
       animation-timing-function: ease-out;
   }
+}
+
+
+.test{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #017A4F;
+}
+
+.Review-card{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Review-card img{
+  width: 100px;
+  height: 100px;
+}
+
+.review-text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-review-wrapper{
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-auto-columns: 50%; */
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+
+.section-review-container{
+  padding: 100px 200px 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snaps-inline{
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
 }

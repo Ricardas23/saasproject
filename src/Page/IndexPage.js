@@ -1,12 +1,18 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Zoom from 'react-reveal/Zoom'; 
 import Fade from "react-reveal/Fade"
+import {Switch} from "antd"
+
+
 const IndexPage = () => {
 
+  const [changePlanPrice, setChangePlanPrice] = useState(false)
 
-  // useEffect(()=>{
-  //   AOS.init({duration: 2000})
-  // }, [])
+  const changePrice = () => {
+    changePlanPrice ? setChangePlanPrice(false): setChangePlanPrice(true)
+  }
+
+  
 
   return (
     <main>
@@ -107,11 +113,85 @@ const IndexPage = () => {
         <div className='section-pricing-text'>
           <h3>Choose your best pricing plan</h3>
         </div>
-        <div className='pricing-card'></div>
-        <div className='pricing-card'></div>
-        <div className='pricing-card'></div>
+        <div className='button-change-plans'>
+          <p>Added for Montly <Switch onClick={changePrice} /> Yearly</p>
+        </div>
+        <div className='pricing-container'>
 
+        <div className='pricing-card'>
+          <h4>Start-up</h4>
+          <h3>{changePlanPrice?  <span>$110/year</span> : <span>$10/mo</span>}</h3>
+          <p>Easy Customizible</p>
+          <p>Commercial license</p>
+          <p>Single user license</p>
+          <p>Hotline support 24/7</p>
+          <button>Try this package</button>
+        </div>
+
+        <div className='pricing-card'>
+          <h4>Classic</h4>
+          <h3>{changePlanPrice?  <span>$330/year</span> : <span>$30/mo</span>}</h3>
+          <p>Easy Customizible</p>
+          <p>Commercial license</p>
+          <p>5 user license</p>
+          <p>Hotline support 24/7</p>
+          <button>Try this package</button>
+
+        </div>
+
+        <div className='pricing-card'>
+          <h4>Premium</h4>
+          <h3>{changePlanPrice?  <span>$550/year</span> : <span>$49/mo</span>}</h3>
+          <p>Easy Customizible</p>
+          <p>Commercial license</p>
+          <p>10 user license</p>
+          <p>Hotline support 24/7</p>
+          <button>Try this package</button>
+        </div>
+  
+        </div>
       </div>
+    </section>
+
+    <section className='section-review-container'>
+      <div className='review-text'>
+        <h2>Lets see our User's Review</h2>
+      </div>
+      <div className='section-review-wrapper snaps-inline'>
+      <div className='Review-card'>
+        <img src='https://avatar.iran.liara.run/public/31' alt=''/>
+        <h3>James </h3>
+        <p>Labai gera imone labai viskas patiko</p>
+      </div>
+      <div className='Review-card'>
+        <img src='https://avatar.iran.liara.run/public/3' alt=''/>
+        <h3>Andrew </h3>
+        <p>Labai gera imone labai viskas patiko</p>
+      </div>
+      <div className='Review-card'>
+        <img src='https://avatar.iran.liara.run/public/5' alt=''/>
+        <h3>Jake </h3>
+        <p>Labai gera imone labai viskas patiko</p>
+      </div>
+      <div className='Review-card'>
+        <img src='https://avatar.iran.liara.run/public/12' alt=''/>
+        <h3>Brian </h3>
+        <p>Labai gera imone labai viskas patiko</p>
+      </div>
+      <div className='Review-card'>
+        <img src='https://avatar.iran.liara.run/public/25' alt=''/>
+        <h3>James </h3>
+        <p>Labai gera imone labai viskas patiko</p>
+      </div>
+      <div className='Review-card'>
+        <img src='https://avatar.iran.liara.run/public/14' alt=''/>
+        <h3>Paul </h3>
+        <p>Labai gera imone labai viskas patiko</p>
+      </div>
+      </div>
+
+
+
     </section>
     </Fade>
     </main>
