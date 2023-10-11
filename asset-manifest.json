@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/saasproject/static/css/main.774cdcb2.css",
+    "main.js": "/saasproject/static/js/main.a6cb6286.js",
+    "static/js/787.c4b9642c.chunk.js": "/saasproject/static/js/787.c4b9642c.chunk.js",
+    "static/media/Group 396.png": "/saasproject/static/media/Group 396.661be0b7af8f082eee53.png",
+    "static/media/preview 1.png": "/saasproject/static/media/preview 1.0689be372c14529c767d.png",
+    "index.html": "/saasproject/index.html",
+    "main.774cdcb2.css.map": "/saasproject/static/css/main.774cdcb2.css.map",
+    "main.a6cb6286.js.map": "/saasproject/static/js/main.a6cb6286.js.map",
+    "787.c4b9642c.chunk.js.map": "/saasproject/static/js/787.c4b9642c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.774cdcb2.css",
+    "static/js/main.a6cb6286.js"
+  ]
+}
