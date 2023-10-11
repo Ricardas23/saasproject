@@ -18,7 +18,7 @@ function App() {
 
         <Routes>
 
-          <Route path='/' element={<IndexPage/>} ></Route>
+          <Route path='/saasproject' element={<IndexPage/>} ></Route>
 
 
         </Routes>
