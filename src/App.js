@@ -3,9 +3,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import IndexPage from './Page/IndexPage';
 import Toolbar from './Components/Toolbar';
 import { AOS } from 'aos'
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
+
 
 function App() {
+  
+  const [allreviews, setAllReviews] = useState([])
 
 
   return (
@@ -18,7 +21,7 @@ function App() {
 
         <Routes>
 
-          <Route path='/saasproject/' element={<IndexPage/>} ></Route>
+          <Route path='/saasproject/' element={<IndexPage allreviews={allreviews} setAllReviews={setAllReviews} />} ></Route>
 
 
         </Routes>

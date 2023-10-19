@@ -3,9 +3,12 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from "react-reveal/Fade"
 import {Switch} from "antd"
 import { Link } from 'react-router-dom';
+import PriceCard1 from '../Components/PriceCard1';
+import AddReviewCard from '../Components/AddReviewCard';
+import ReviewCard from '../Components/ReviewCard';
 
-
-const IndexPage = () => {
+const IndexPage = ({allreviews, setAllReviews}) => {
+  
 
   const [changePlanPrice, setChangePlanPrice] = useState(false)
 
@@ -127,6 +130,7 @@ const IndexPage = () => {
           <p>Single user license</p>
           <p>Hotline support 24/7</p>
           <button>Try this package</button>
+          {/* <PriceCard1/> */}
         </div>
 
         <div className='pricing-card font'>
@@ -159,35 +163,38 @@ const IndexPage = () => {
         <h2>Lets see our User's Review</h2>
       </div>
       <div className='section-review-wrapper snaps-inline'>
+      <div className='reviewcardcontainer'>
+        {/* <AddReviewCard allreviews={allreviews} setAllReviews={setAllReviews} /> */}
+</div>
       <div className='Review-card '>
         <img src='https://avatar.iran.liara.run/public/31' alt=''/>
         <h3>James </h3>
-        <p>Labai gera imone labai viskas patiko</p>
+        <p>LoremLoremLoremLoremLoremLoremLorem</p>
       </div>
       <div className='Review-card font'>
         <img src='https://avatar.iran.liara.run/public/3' alt=''/>
         <h3>Andrew </h3>
-        <p>Labai gera imone labai viskas patiko</p>
+        <p>LoremLoremLoremLoremLoremLoremLorem</p>
       </div>
       <div className='Review-card font'>
         <img src='https://avatar.iran.liara.run/public/5' alt=''/>
         <h3>Jake </h3>
-        <p>Labai gera imone labai viskas patiko</p>
+        <p>LoremLoremLoremLoremLoremLoremLorem</p>
       </div>
       <div className='Review-card font'>
         <img src='https://avatar.iran.liara.run/public/12' alt=''/>
         <h3>Brian </h3>
-        <p>Labai gera imone labai viskas patiko</p>
+        <p>LoremLoremLoremLoremLoremLoremLorem</p>
       </div>
       <div className='Review-card font'>
         <img src='https://avatar.iran.liara.run/public/25' alt=''/>
         <h3>James </h3>
-        <p>Labai gera imone labai viskas patiko</p>
+        <p>LoremLoremLoremLoremLoremLoremLorem</p>
       </div>
       <div className='Review-card font'>
         <img src='https://avatar.iran.liara.run/public/14' alt=''/>
         <h3>Paul </h3>
-        <p>Labai gera imone labai viskas patiko</p>
+        <p>LoremLoremLoremLoremLoremLoremLorem</p>
       </div>
       </div>
     </section>
@@ -244,19 +251,19 @@ const IndexPage = () => {
         <div className='f-nav'>
         <h3>Resources</h3>
         <ul>
-          <li>Services</li>
-          <li>Pricing</li>
-          <li>Testimonials</li>
-          <li>Blog</li>
+          <li><Link to="/">Services</Link></li>
+          <li><Link to='/'>Pricing</Link></li>
+          <li><Link to='/'>Testimonials</Link></li>
+          <li><Link to='/'>Blog</Link></li>
         </ul>
         </div>
         <div className='f-nav'>
         <h3>Usefull Links</h3>
         <ul>
-          <li>Terms of Services</li>
-          <li>Privacy Policy</li>
-          <li>Cookie Policy</li>
-          <li>Contact us</li>
+          <li><Link to='/'>Terms of Services</Link></li>
+          <li><Link to='/'>Privacy Policy</Link></li>
+          <li><Link to='/'>Cookie Policy</Link></li>
+          <li><Link to='/'>Contact us</Link></li>
         </ul>
         </div>
       </div>
