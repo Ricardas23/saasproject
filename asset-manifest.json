@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/saasproject/static/css/main.012d86ae.css",
-    "main.js": "/saasproject/static/js/main.64c7c11c.js",
+    "main.css": "/saasproject/static/css/main.d5212049.css",
+    "main.js": "/saasproject/static/js/main.45506be1.js",
     "static/js/787.c4b9642c.chunk.js": "/saasproject/static/js/787.c4b9642c.chunk.js",
     "static/media/Group 396.png": "/saasproject/static/media/Group 396.661be0b7af8f082eee53.png",
     "static/media/Rectangle33.png": "/saasproject/static/media/Rectangle33.cfc6bdd80b8eabb9dcc6.png",
     "static/media/preview 1.png": "/saasproject/static/media/preview 1.0689be372c14529c767d.png",
     "index.html": "/saasproject/index.html",
-    "main.012d86ae.css.map": "/saasproject/static/css/main.012d86ae.css.map",
-    "main.64c7c11c.js.map": "/saasproject/static/js/main.64c7c11c.js.map",
+    "main.d5212049.css.map": "/saasproject/static/css/main.d5212049.css.map",
+    "main.45506be1.js.map": "/saasproject/static/js/main.45506be1.js.map",
     "787.c4b9642c.chunk.js.map": "/saasproject/static/js/787.c4b9642c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.012d86ae.css",
-    "static/js/main.64c7c11c.js"
+    "static/css/main.d5212049.css",
+    "static/js/main.45506be1.js"
   ]
 }
